@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm bán hàng</title>
+    <link rel="stylesheet" href="beer.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-background">
+                <div class="logo">
+                    <img src="./img/anh-logo.png" alt="" class="Logo" style="width:100% ; height: 120px;">
+                </div>
+                <div class="background">
+                    
+                    <img src="./img/BackGround.png" alt="" class="backGround" style="width: 100%; height: 120px; float: right;">
+                    <div class="sidebar">
+
+                        <div class="toolsBar">
+                            <a href="http://127.0.0.1:5501/home.html">Trang chủ</a>|
+                            <a href="http://127.0.0.1:5501/beer.html">Sản Phẩm</a>|
+                            <a href="#">Liên Hệ</a>|
+                            <a href="#">Giới Thiệu</a>
+                        </div>
+                        
+                        <div class="cart">
+                            <form>
+                                <input oninput="searchItem()" id="searchWord" type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+
+                            </form>
+                          
+                            <button class="open-button" onclick="openForm()">Giỏ hàng</button>
+
+                            <div class="form-popup" id="myForm">
+                            <form action="" class="form-container">
+                                <div id='addItem'>
+                                    
+                                </div>
+                            
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </header>
+    <div class="itemIndex">
+        <div class="container" id="item">
+    
+        </div>
+        <img src="" alt="">
+        <script src="beer.js"> </script>
+    </div>
+    <hr>
+    <!-- footer -->
+    <div class="footer" style="display: flex; background: #f3f6f5" >
+        <div class="map">
+            <iframe style="flex:3 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.5534205324842!2d107.59218776385663!3d16.464714341967778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13c00686347%3A0x312e8ccbe67acf98!2zMjggTmd1eeG7hW4gVHJpIFBoxrDGoW5nLCBQaMO6IEjhu5lpLCBUaMOgbmggcGjhu5EgSHXhur8sIFRo4burYSBUaGnDqm4gSHXhur8sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1641136554525!5m2!1svi!2s" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="tools" style="text-align: center; margin-left: 290px;">
+            <div class="fb">
+                <button class="fbCaNhan"> <a href="https://www.facebook.com/codegymhue">f</a></button>
+            </div>
+            <div>
+                <p style="font-size:13px ;">CodeGym Huế</p>
+                <p style="font-size:13px ;">Tầng 4, 28 Nguyễn Tri Phương, Thành Phố Huế</p>
+                <p style="color: white;">--</p>
+                <div class="End" >
+                    <a style="color: darkgray; text-decoration: none; font-size: 12px;" href="#">Điều khoản Cookies -</a>
+                    <a style="color: darkgray; text-decoration: none; font-size: 12px;" href="#">Điều khoản Sử dụng -</a>
+                    <a style="color: darkgray; text-decoration: none; font-size: 12px;" href="#">Điều khoản Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
